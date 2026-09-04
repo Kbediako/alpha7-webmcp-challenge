@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <filter id="concrete" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.024" numOctaves="3" seed="17" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0.24 0 0 0 0.42 0 0.24 0 0 0.40 0 0 0.24 0 0.36 0 0 0 0.22 0" result="grain"/>
+      <feBlend in="SourceGraphic" in2="grain" mode="multiply"/>
+    </filter>
+    <radialGradient id="dust-a" cx="34%" cy="28%" r="52%">
+      <stop offset="0" stop-color="#707070" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#535353" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dust-b" cx="78%" cy="75%" r="48%">
+      <stop offset="0" stop-color="#3f3f3f" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#3f3f3f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="#52504d" filter="url(#concrete)"/>
+  <rect width="512" height="512" fill="url(#dust-a)"/>
+  <rect width="512" height="512" fill="url(#dust-b)"/>
+  <g stroke="#4a4945" stroke-opacity=".14" stroke-width="1">
+    <path d="M160 0v512M320 0v512M480 0v512M0 160h512M0 320h512M0 480h512"/>
+  </g>
+  <g stroke="#2e2d2a" stroke-linecap="round" fill="none">
+    <path d="M44 108c28 9 47-2 75 7 22 7 32 19 58 16" stroke-opacity=".16" stroke-width="1.4"/>
+    <path d="M318 86c16 20 44 21 60 42 9 12 9 25 24 38" stroke-opacity=".13" stroke-width="1.1"/>
+    <path d="M74 352c38-19 64-7 99-24 16-8 30-23 51-20" stroke-opacity=".12" stroke-width="1.2"/>
+    <path d="M286 412c42-12 71-3 117-20 20-8 36-20 60-18" stroke-opacity=".15" stroke-width="1.6"/>
+    <path d="M214 58l20 16-15 11 27 16" stroke-opacity=".12" stroke-width="1"/>
+    <path d="M398 248l-30 8 20 14-34 18" stroke-opacity=".10" stroke-width="1"/>
+  </g>
+  <g fill="#bcb8b3" fill-opacity=".045">
+    <circle cx="94" cy="226" r="2"/>
+    <circle cx="411" cy="103" r="1.5"/>
+    <circle cx="461" cy="452" r="2.2"/>
+    <circle cx="219" cy="421" r="1.6"/>
+  </g>
+</svg>

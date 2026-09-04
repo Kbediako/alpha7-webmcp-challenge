@@ -1,0 +1,37 @@
+{
+  "name": "alpha-7-tanks-arena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "pnpm": {
+    "overrides": {
+      "ws": "8.21.3"
+    }
+  },
+  "scripts": {
+    "dev": "pnpm build:shared && concurrently -n server,client -c green,orange \"pnpm --filter @alpha7/server dev\" \"pnpm --filter @alpha7/client dev --host 0.0.0.0\"",
+    "dev:client": "pnpm build:shared && pnpm --filter @alpha7/client dev",
+    "dev:server": "pnpm build:shared && pnpm --filter @alpha7/server dev",
+    "debug:agent-play": "pnpm build:shared && tsx apps/client/scripts/agent-play-harness.ts",
+    "agent:connect": "pnpm build:shared && tsx apps/client/scripts/agent-play-harness.ts --connect",
+    "build": "pnpm -r --sort build",
+    "build:shared": "pnpm --filter @alpha7/shared build",
+    "build:client": "pnpm build:shared && pnpm --filter @alpha7/client build",
+    "build:server": "pnpm build:shared && pnpm --filter @alpha7/server build",
+    "start": "pnpm --filter @alpha7/server start",
+    "test": "pnpm build:shared && pnpm -r --sort test",
+    "typecheck": "pnpm build:shared && pnpm -r --sort typecheck",
+    "check": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}

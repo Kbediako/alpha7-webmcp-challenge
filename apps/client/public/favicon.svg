@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="mark">
+      <path d="M8 52 22 12h20l14 40Z"/>
+    </clipPath>
+  </defs>
+  <path
+    d="M8 52 22 12h20l14 40ZM19 23h25L32 35v-7H21ZM28 52v-7l3-4h4l3 4v7Z"
+    fill="#f7f3ed"
+    fill-rule="evenodd"
+  />
+  <path d="M13 54h9l29-41h-9Z" fill="#ff5a1f" clip-path="url(#mark)"/>
+</svg>

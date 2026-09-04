@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "assetRoot": "/assets",
+  "strategy": "procedural-runtime-with-replaceable-nonblocking-assets",
+  "fonts": {
+    "rajdhani": {
+      "source": "https://fonts.google.com/specimen/Rajdhani",
+      "cssFamily": "Rajdhani",
+      "fallback": "Inter, system-ui, sans-serif"
+    },
+    "inter": {
+      "source": "https://fonts.google.com/specimen/Inter",
+      "cssFamily": "Inter",
+      "fallback": "system-ui, sans-serif"
+    },
+    "ibmPlexMono": {
+      "source": "https://fonts.google.com/specimen/IBM+Plex+Mono",
+      "cssFamily": "IBM Plex Mono",
+      "fallback": "ui-monospace, monospace"
+    }
+  },
+  "ui": {
+    "icons": {
+      "reticle": "/assets/ui/icons/reticle.svg",
+      "repair": "/assets/ui/icons/repair.svg",
+      "shield": "/assets/ui/icons/shield.svg"
+    }
+  },
+  "tanks": {
+    "nova": {
+      "model": null,
+      "texture": null,
+      "fallback": "procedural-assault-mesh"
+    },
+    "atlas": {
+      "model": null,
+      "texture": null,
+      "fallback": "procedural-balanced-mesh"
+    },
+    "quill": {
+      "model": null,
+      "texture": null,
+      "fallback": "procedural-skirmisher-mesh"
+    },
+    "rook": {
+      "model": null,
+      "texture": null,
+      "fallback": "procedural-support-mesh"
+    }
+  },
+  "maps": {
+    "wallConcrete": {
+      "texture": "/assets/generated/textures/alpha7-wall-stone-preview-color.jpg",
+      "normal": "/assets/generated/textures/alpha7-wall-stone-preview-normal.jpg",
+      "arm": "/assets/generated/textures/alpha7-wall-stone-preview-arm.jpg",
+      "fallback": "reference-informed-concrete-v4"
+    },
+    "floorConcrete": {
+      "texture": "/assets/generated/textures/alpha7-floor-concrete-worn-preview-color.jpg",
+      "normal": "/assets/generated/textures/alpha7-floor-concrete-worn-preview-normal.jpg",
+      "roughness": "/assets/generated/textures/alpha7-floor-concrete-worn-preview-roughness.jpg",
+      "fallback": "reference-informed-concrete-v4"
+    },
+    "floorAsphaltPreview": {
+      "texture": "/assets/generated/textures/alpha7-floor-asphalt-preview-color.jpg",
+      "normal": "/assets/generated/textures/alpha7-floor-asphalt-preview-normal.jpg",
+      "arm": "/assets/generated/textures/alpha7-floor-asphalt-preview-arm.jpg",
+      "fallback": "query-preview-alpha7PreviewFloor-asphalt"
+    },
+    "floorConcreteWornPreview": {
+      "texture": "/assets/generated/textures/alpha7-floor-concrete-worn-preview-color.jpg",
+      "normal": "/assets/generated/textures/alpha7-floor-concrete-worn-preview-normal.jpg",
+      "roughness": "/assets/generated/textures/alpha7-floor-concrete-worn-preview-roughness.jpg",
+      "fallback": "query-preview-alpha7PreviewFloor-worn"
+    },
+    "floorPlasteredPreview": {
+      "texture": "/assets/generated/textures/alpha7-floor-plastered-preview-color.jpg",
+      "normal": "/assets/generated/textures/alpha7-floor-plastered-preview-normal.jpg",
+      "arm": "/assets/generated/textures/alpha7-floor-plastered-preview-arm.jpg",
+      "fallback": "query-preview-alpha7PreviewFloor-plaster"
+    },
+    "floorRockDryPreview": {
+      "texture": "/assets/generated/textures/alpha7-floor-rock-dry-preview-color.jpg",
+      "normal": "/assets/generated/textures/alpha7-floor-rock-dry-preview-normal.jpg",
+      "arm": "/assets/generated/textures/alpha7-floor-rock-dry-preview-arm.jpg",
+      "fallback": "query-preview-alpha7PreviewFloor-rock"
+    },
+    "wallStonePreview": {
+      "texture": "/assets/generated/textures/alpha7-wall-stone-preview-color.jpg",
+      "normal": "/assets/generated/textures/alpha7-wall-stone-preview-normal.jpg",
+      "arm": "/assets/generated/textures/alpha7-wall-stone-preview-arm.jpg",
+      "fallback": "query-preview-alpha7PreviewWall-stone"
+    }
+  },
+  "fx": {
+    "cannonMuzzle": {
+      "sprite": null,
+      "fallback": "procedural-orange-pulse"
+    },
+    "smoke": {
+      "sprite": null,
+      "fallback": "procedural-translucent-disc"
+    },
+    "zoneWarning": {
+      "sprite": null,
+      "fallback": "procedural-orange-ring"
+    }
+  },
+  "audio": {
+    "ambientMusic": {
+      "src": "/assets/audio/ambient-steel-rain.mp3",
+      "fallback": "silent-until-user-gesture"
+    },
+    "tankMove": {
+      "src": "/assets/audio/tank-rumble.mp3",
+      "fallback": "silent-until-user-gesture"
+    },
+    "tankFire": {
+      "src": "/assets/audio/tank-fire.wav",
+      "fallback": "silent-until-user-gesture"
+    }
+  },
+  "generated": {
+    "readme": "/assets/generated/README.md"
+  }
+}
